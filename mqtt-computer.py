@@ -39,7 +39,7 @@ def on_message(client, data, msg):
         elif message == b'6' :
             sound = "audio/kowalski-analysis.mp3"
         elif message == b'7' :
-            sound = "audio/obi-wan-hello-there.mp3"
+            sound = "audio/bruh.mp3"
         elif message == b'8' :
             sound = "audio/tim_and_eric_it_s_free_real_estate.mp3"
         elif message == b'9' :
@@ -53,7 +53,9 @@ def on_message(client, data, msg):
         elif message == b'd' :
             sound = "audio/nfl.mp3"
         elif message == b'e' :
-            sound = "audio/bruh.mp3"
+            sound = "audio/obi-wan-hello-there.mp3"
+        elif message == b'f' :
+            sound = "audio/generalkenobi.mp3"
 
         # play sound if it exists
         if sound != "" :
