@@ -63,7 +63,6 @@ void setup() {
   pinMode(row3, INPUT);
   pinMode(row4, INPUT);
 
-
   // Initiate the Keyboard object that communicates over USB.
   Keyboard.begin();
 }
