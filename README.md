@@ -23,3 +23,9 @@ This project uses the Arduino IDE for writing and compiling. To connect with the
 * Configuration settings to connect with the BlackPill came from [this tutorial](https://www.sgbotic.com/index.php?dispatch=pages.view&page_id=49)
 * The board configuration URL in the previous tutorial is depreciated. This url was used instead:
     ```https://www.sgbotic.com/index.php?dispatch=pages.view&page_id=49```
+
+# Future Considerations
+
+* Using the [STM32 HAL driver](https://www.st.com/resource/ja/user_manual/dm00105879-description-of-stm32f4-hal-and-ll-drivers-stmicroelectronics.pdf) to have stronger control over the I/Os of the BlackPill.
+* Include a pull-down resistor on the PCB. When the PCB was designed it was overlooked that a pull-down resistor was necessary, leading to a breadboard being necessary.
+* Use this keypad for other purposes like macros or commands.
