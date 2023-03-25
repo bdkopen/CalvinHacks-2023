@@ -58,7 +58,7 @@ def on_message(client, data, msg):
         # play sound if it exists
         if sound != "" :
             print("Playing sound: " + sound)
-            playsound(sound)
+            playsound(sound, 0)
             print("Sound finished")
 
 # Setup MQTT client and callbacks
