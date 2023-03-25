@@ -1,6 +1,6 @@
 '''
 MQTT Computer
-Author: Sawyer Travis
+Author: Sawyer Travis (sjt29)
 Plays music files based on MQTT messages
 '''
 import paho.mqtt.client as mqtt

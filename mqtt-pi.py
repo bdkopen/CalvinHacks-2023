@@ -1,7 +1,7 @@
 '''
 MQTT Pi
-Author: Sawyer Travis
-Sends MQTT message based on macro key press
+Author: Sawyer Travis (sjt29)
+Sends MQTT message based on macro key press from Raspberry Pi
 '''
 import paho.mqtt.publish as publish
 import time
@@ -15,7 +15,7 @@ while True:
     key = keyboard.read_key()
     print(key)
 
-    if key == 'esc':    # exit on esc key
+    if key == 'esc':  # exit on esc key
         break
 
     publish.single("hacks/keypad", str(key), hostname=BROKER)
